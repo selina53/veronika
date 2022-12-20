@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav>
+        <div id="main" class="nav">
+            <div class="logo-cont">
+                <h1><a id="logo" href="#main">studio</a></h1>
+            </div>
+            <div class="menu-cont">
+                <ul>
+                    <li class="link-cont"><a id="portLink" class="link" href="#">Portfolio</a></li>
+                    <li class="link-cont"><a id="about" class=" link" href="#">about</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- PANDAS CONTAINER -->
+    <div class="big-circles">
+        <div class="big-circle"></div>
+        <div class="big-circle"></div>
+        <div class="big-circle"></div>
+    </div>
+    <header>
+        <section id="home">
+            <h1 class="quote">Art is not what you see <br>But what you make others see</h1>
+            <div class="slide-wrapper">
+                <div class="smallcircles">
+                    <div class="small-circle">
+                        <div class="circle-inside"></div>
+                        <div class="circle-inside two"></div>
+                    </div>
+                    <div class="small-circle">
+                        <div class="circle-inside"></div>
+                        <div class="circle-inside two"></div>
+                    </div>
+                    <div class="small-circle">
+                        <div class="circle-inside"></div>
+                        <div class="circle-inside two"></div>
+                    </div>
+                    <div class="small-circle">
+                        <div class="circle-inside q"></div>
+                        <div class="circle-inside w"></div>
+                    </div>
+                    <div class="small-circle">
+                        <div class="circle-inside"></div>
+                        <div class="circle-inside two"></div>
+                    </div>
+                    <div class="small-circle">
+                        <div class="circle-inside"></div>
+                        <div class="circle-inside two"></div>
+                    </div>
+                    <div class="small-circle">
+                        <div class="circle-inside"></div>
+                        <div class="circle-inside two"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- PORTFOLIO  -->
+    <div id="portfolio" class="portfolio-cont">
+        <div onclick="window.location.href = '3D.html';" id="pan1" class="panel active"
+            style="background-image: url(portfolio/3D.jpg); background-size:cover">
+            <h3>3D</h3>
+        </div>
+        <div onclick="window.location.href = 'vfx.html';" id="pan2" class="panel"
+            style="background-image: url(portfolio/vfx.jpg); background-size:cover">
+            <h3>vfx</h3>
+        </div>
+        <div onclick="window.location.href = 'digital-art.html';" id="pan3" class="panel"
+            style="background-image: url(portfolio/digital-art.webp); background-size:cover">
+            <h3>digital art</h3>
+        </div>
+        <div onclick="window.location.href = 'art.html';" id="pan4" class="panel"
+            style="background-image: url(portfolio/art.jpeg); background-size:cover;">
+            <h3>art</h3>
+        </div>
+    </div>
+    <!-- CONTACT -->
+    <div id="contactMe" class="contact">
+        <div class="about-me">
+            <p class="about-txt">I'm a third year student at Sogang University. I am very into the drawing. Being
+                creative and learn various kinds of arts have always been an essentional parts of my life.
+                Please leave
+                your question here.</h3>
+        </div>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="surmane" placeholder="Surname">
+            <input type="email" name="email" placeholder="E-mail">
+            <textarea type="text" placeholder="Enter details of your project or ask a question."></textarea>
+        </form>
+        <button class="btn" type="butotn" name="button">Submit</button>
+    </div>
+    <script src="anim.js"></script>
+</body>
+
+</html>
